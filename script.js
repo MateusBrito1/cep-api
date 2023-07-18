@@ -22,7 +22,7 @@ class viaCep {
 
   pesquisarCep = async () => {
     this.cep = this.cepInput.value;
-    const url = `http://viacep.com.br/ws/${this.cep}/json/`;
+    const url = `https://viacep.com.br/ws/${this.cep}/json/`;
     try {
       const dados = await fetch(url);
       const endereco = await dados.json();
